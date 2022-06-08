@@ -1,0 +1,5 @@
+/node_modules/
+/dist/
+tsconfig.tsbuildinfo
+/test/out
+/test/fixtures/fixture-win32-x64/Update.exe

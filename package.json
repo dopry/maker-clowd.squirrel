@@ -1,0 +1,41 @@
+{
+    "name": "@dopry/maker-clowd.squirrel",
+    "version": "0.0.0-development",
+    "//perDependencyComments": {
+        "@electron-forge/core": "Used to indicate electron forge version compatibility."
+    },
+    "peerDependencies": {
+        "@electron-forge/core": ">=6.0.0-beta"
+    },
+    "engines": {
+        "node": ">= 12.13.0"
+    },
+    "description": "Clowd.Squirrel maker for Electron Forge",
+    "repository": "https://github.com/dopry/maker-clowd.squirrel",
+    "author": "Darrel O'Pry",
+    "license": "MIT",
+    "main": "dist/MakerClowdSquirrel.js",
+    "typings": "dist/MakerClowdSquirrel.d.ts",
+    "files": [
+        "dist",
+        "vendor"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "lint": "eslint src/*.ts src/**/*.ts",
+        "semantic-release": "semantic-release"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.27.1",
+        "chai": "^4.3.3",
+        "eslint": "^8.17.0",
+        "eslint-plugin-ava": "^13.2.0",
+        "mocha": "^9.0.1",
+        "semantic-release": "^19.0.2",
+        "typescript": "^4.7.3"
+    },
+    "dependencies": {
+        "@electron-forge/maker-base": ">=6.0.0-beta",
+        "@electron-forge/shared-types": ">=6.0.0-beta"
+    }
+}
